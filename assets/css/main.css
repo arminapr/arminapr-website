@@ -4034,7 +4034,7 @@ body.is-preload #sidebar nav ul li {
 
 @media screen and (max-width: 980px) {
 
-	#intro p br {
+	#intro p {
 		display: none;
 	}
 

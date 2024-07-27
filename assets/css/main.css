@@ -4181,17 +4181,6 @@ body.is-preload #sidebar nav ul li {
 }
 
 @media (max-width: 768px) {
-	.travel-photo {
-		flex-direction: column;
-	}
-
-	.travel-photo img {
-		width: 100%;
-		height: auto;
-	}
-}
-
-@media (max-width: 480px) {
 	.traveling {
 		flex-direction: column;
 	}
@@ -4200,4 +4189,25 @@ body.is-preload #sidebar nav ul li {
 		width: 100%;
 		height: auto;
 	}
+
+	.intro-section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.personal-photo img {
+		width: 250px !important; 
+		height: auto;
+	}
+	
+	.personal-photo {
+        order: -1; 
+    }
+}
+
+.personal-photo img {
+	width:400px;
+	height:auto;
+	border-radius:50%;
+	opacity: 0.9;
 }

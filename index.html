@@ -3,7 +3,7 @@
 
 <head>
 	<title>Armina Parvaresh Rizi</title>
-	<link rel="icon" href="/images/favicon_io/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/assets/images/favicon_io/favicon.ico" type="image/x-icon">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -57,7 +57,7 @@
 					</ul>
 				</div>
 				<div class="personal-photo">
-					<img src="images/armina.jpg" alt="Armina Parvaresh Rizi">
+					<img src="/assets/images/armina.jpg" alt="Armina Parvaresh Rizi">
 				</div>
 			</div>
 		</section>
@@ -98,7 +98,27 @@
 				<h2>Projects</h2>
 			</div>
 			<section>
-				<a id="reversiThumbnail" href="#bigReversi" class="image"><img src="images/reversi.gif"
+				<a class="image"><img src="/assets/images/market.jpg" alt="Picture of financial trends on a computer."
+						data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Market Reader (Python)</h2>
+						<p>A sentiment analysis tool designed to evaluate the sentiment of real-time financial news.
+							The project integrates the BERT model to classify text into neutral, negative, or positive
+							categories
+							and features a web scraping component that extracts headlines from Yahoo Finance,
+							and analyzes their sentiment. This model achieved around <b>85% accuracy</b>.
+						<p><a href="https://huggingface.co/spaces/arminap/sentiment-analysis" target="_blank">Use the
+								model on Hugging Face </a>
+							<br><a href="https://github.com/arminapr/market-reader" target="_blank">View the code on
+								GitHub</a>
+							<br>Ft. Ryan Brueckner & Carlos Cueto
+						</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a id="reversiThumbnail" href="#bigReversi" class="image"><img src="/assets/images/reversi.gif"
 						alt="Walkthrough of Reversi Game" data-position="5% center" /></a>
 				<div class="content">
 					<div class="inner">
@@ -115,7 +135,7 @@
 				</div>
 			</section>
 			<section>
-				<a class="image"><img src="images/klondike.gif" alt="Walkthrough of Klondike Game"
+				<a class="image"><img src="/assets/images/klondike.gif" alt="Walkthrough of Klondike Game"
 						data-position="25% center" /></a>
 				<div class="content">
 					<div class="inner">
@@ -130,61 +150,65 @@
 					</div>
 				</div>
 			</section>
-			<section>
-				<a class="image"><img src="images/maze.gif" alt="Walkthrough of Maze game"
-						data-position="top center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Maze Solver (Java)</h2>
-						<p>A random maze game developed using Kruskal's Algorithm.
-							The code adjusts to the user's preferred size and includes options to solve the maze using
-							BFS or DFS. Additionally, users can solve the maze themselves
-							and choose to turn on or off the visited
-							paths.
-						</p>
-						<p>* The demo shows a Depth-First Search on a 50x50 maze.<br>** Code is available upon request.
-						</p>
+			<button id="view-more-button">View More</button>
+			<div id="additional-projects" style="display: none;" class="wrapper style2 spotlights">
+				<section>
+					<a class="image"><img src="/assets/images/maze.gif" alt="Walkthrough of Maze game"
+							data-position="top center" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Maze Solver (Java)</h2>
+							<p>A random maze game developed using Kruskal's Algorithm.
+								The code adjusts to the user's preferred size and includes options to solve the maze
+								using
+								BFS or DFS. Additionally, users can solve the maze themselves
+								and choose to turn on or off the visited
+								paths.
+							</p>
+							<p>* The demo shows a Depth-First Search on a 50x50 maze.<br>** Code is available upon
+								request.
+							</p>
+						</div>
 					</div>
-				</div>
-			</section>
-			<section>
-				<a class="image"><img src="images/floodit.gif" alt="Walkthrough of Flood It game"
-						data-position="center center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Flood It (Java)</h2>
-						<p>A game where cells flood based on each color selected by the user.
-							The user needs to complete the game within a certain number of steps to win,
-							with the number of steps calculated based on the grid size.
-							This project demonstrates an understanding of color-based flood fill algorithms and user
-							interaction.</p>
-						<p>* The demo shows a 14x14 board.<br>** Code is available upon request.</p>
+				</section>
+				<section>
+					<a class="image"><img src="/assets/images/floodit.gif" alt="Walkthrough of Flood It game"
+							data-position="center center" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Flood It (Java)</h2>
+							<p>A game where cells flood based on each color selected by the user.
+								The user needs to complete the game within a certain number of steps to win,
+								with the number of steps calculated based on the grid size.
+								This project demonstrates an understanding of color-based flood fill algorithms and user
+								interaction.</p>
+							<p>* The demo shows a 14x14 board.<br>** Code is available upon request.</p>
+						</div>
 					</div>
-				</div>
-			</section>
-			<section>
-				<a class="image"><img src="images/boston.jpg"
-						alt="Picture of the Boston skyline, with a rainbow at sunset."
-						data-position="center center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Accelcoin Blockchain Miner (Racket)</h2>
-						<p>A Racket-based blockchain miner resulting in the highest Accelcoin mining yield among peers.
-							This design consists of a comprehensive validation and ledger management mechanism
-							to ensure the integrity and performance of the blockchain network.</p>
-						<p>* No visuals to see here. Enjoy a picture of Boston!<br>** Code is available upon
-							request.<br>Ft. Ryan Zhu</p>
+				</section>
+				<section>
+					<a class="image"><img src="/assets/images/accelcoin.jpg"
+							alt="Picture of the Boston skyline, with a rainbow at sunset."
+							data-position="center center" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Accelcoin Blockchain Miner (Racket)</h2>
+							<p>A Racket-based blockchain miner resulting in the highest Accelcoin mining yield among
+								peers.
+								This design consists of a comprehensive validation and ledger management mechanism
+								to ensure the integrity and performance of the blockchain network.</p>
+							<p>* Code is available upon
+								request.<br>Ft. Ryan Zhu</p>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 			<section id="in-progress-projects">
 				<div class="content">
 					<div class="inner">
 						<h2>In Progress Projects</h2>
 						<ul>
-							<li>Market Reader: Sentiment Analysis on Financial News (Python)</li>
 							<li>React-based Personal Website (TypeScript, React, HTML/SCSS)</li>
-							<li>Predictive Analysis of Confidence in National Government (Python)</li>
 						</ul>
 					</div>
 				</div>
@@ -235,7 +259,8 @@
 					</section>
 				</div>
 				<ul class="actions">
-					<li><a href="https://www.linkedin.com/in/arminapr" class="button" target="_blank">Learn more on LinkedIn</a>
+					<li><a href="https://www.linkedin.com/in/arminapr" class="button" target="_blank">Learn more on
+							LinkedIn</a>
 					</li>
 				</ul>
 			</div>
@@ -287,19 +312,19 @@
 				<h2>Traveling</h2>
 				<div class="traveling">
 					<div class="travel-photo" data-location="Washington, DC">
-						<img src="images/washington.jpg" alt="Washington, DC">
+						<img src="/assets/images/washington.jpg" alt="Washington, DC">
 					</div>
 					<div class="travel-photo" data-location="Copenhagen, Denmark">
-						<img src="images/copenhagen.jpg" alt="Copenhagen, Denmark">
+						<img src="/assets/images/copenhagen.jpg" alt="Copenhagen, Denmark">
 					</div>
 					<div class="travel-photo" data-location="Estes Park, CO">
-						<img src="images/colorado.jpg" alt="Estes Park, CO">
+						<img src="/assets/images/colorado.jpg" alt="Estes Park, CO">
 					</div>
 					<div class="travel-photo" data-location="Key West, FL">
-						<img src="images/keywest.jpg" alt="Key West, FL">
+						<img src="/assets/images/keywest.jpg" alt="Key West, FL">
 					</div>
 					<div class="travel-photo" data-location="Milan, Italy">
-						<img src="images/milan.jpg" alt="Milan, Italy">
+						<img src="/assets/images/milan.jpg" alt="Milan, Italy">
 					</div>
 				</div>
 			</div>
@@ -381,6 +406,19 @@
 		// Get the image and insert it inside the modal - use its "alt" text as a caption
 		var img = document.getElementById("reversiThumbnail");
 		var modalImg = document.getElementById("bigReversiImage");
+
+		var viewMoreButton = document.getElementById("view-more-button");
+		var additionalProjects = document.getElementById("additional-projects");
+
+		viewMoreButton.addEventListener("click", function () {
+			if (additionalProjects.style.display === "none") {
+				additionalProjects.style.display = "block";
+				viewMoreButton.textContent = "View Less";
+			} else {
+				additionalProjects.style.display = "none";
+				viewMoreButton.textContent = "View More";
+			}
+		});
 
 		img.onclick = function () {
 			modal.style.display = "block";
